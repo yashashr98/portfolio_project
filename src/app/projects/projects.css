@@ -1,0 +1,95 @@
+/* Import global styles */
+@import '../page.css';
+
+/* Projects page specific styles */
+.projects-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.projects-title {
+  font-family: sans-serif;
+  color: black;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.project-card {
+  width: 80%;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.project-title {
+  font-family: sans-serif;
+  color: black;
+  margin-bottom: 0.5rem;
+}
+
+.project-description {
+  font-family: sans-serif;
+  color: black;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.project-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.project-button {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-family: sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.doc-button {
+  background-color: #e0e0e0;
+  color: black;
+}
+
+.github-button {
+  background-color: #333;
+  color: white;
+}
+
+.live-button {
+  background-color: #0070f3;
+  color: white;
+}
+
+.project-button:hover {
+  opacity: 0.9;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .project-card {
+    width: 100%;
+  }
+  
+  .project-buttons {
+    flex-direction: column;
+  }
+} 
